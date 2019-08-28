@@ -11,6 +11,7 @@ import Cocoa
 
 class CallBackFunctions
 {
+    static var output: (String) -> Void = { _ in }
     static var CAPSLOCK = false
     static var calander = Calendar.current
     static var prev = ""
@@ -139,15 +140,18 @@ Outside:if pressed == 1
             }
             if scancode >= 224 && scancode <= 231
             {
+                output((mySelf.keyMap[scancode]![0] + "("))
                 fh?.write( (mySelf.keyMap[scancode]![0] + "(").data(using: .utf8)!)
                 break Outside
             }
             if CallBackFunctions.CAPSLOCK
             {
+                output(mySelf.keyMap[scancode]![1])
                 fh?.write(mySelf.keyMap[scancode]![1].data(using: .utf8)!)
             }
             else
             {
+                output(mySelf.keyMap[scancode]![0])
                 fh?.write(mySelf.keyMap[scancode]![0].data(using: .utf8)!)
             }
         }
@@ -155,6 +159,7 @@ Outside:if pressed == 1
         {
             if scancode >= 224 && scancode <= 231
             {
+                output(")")
                 fh?.write(")".data(using: .utf8)!)
             }
         }
