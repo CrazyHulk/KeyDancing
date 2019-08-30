@@ -21,15 +21,27 @@
             <items>
                 <menuItem title="start" id="c7p-0P-DV1">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="startRegarding:" target="sJ4-ZD-D9X" id="tTY-wH-aRi"/>
+                    </connections>
                 </menuItem>
                 <menuItem title="show in statusbar" id="nOR-5I-Rj9">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showInStatusBar:" target="sJ4-ZD-D9X" id="agz-Qi-mps"/>
+                    </connections>
                 </menuItem>
                 <menuItem title="show in window" id="m4a-0L-VaO">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showInWindow:" target="sJ4-ZD-D9X" id="2TH-3c-B57"/>
+                    </connections>
                 </menuItem>
                 <menuItem title="stop" id="H11-0N-LaQ">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="stopRegarding:" target="sJ4-ZD-D9X" id="ENc-NG-aOM"/>
+                    </connections>
                 </menuItem>
             </items>
             <point key="canvasLocation" x="142" y="132"/>

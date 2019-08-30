@@ -14,6 +14,7 @@
 		A2D77DD42314282D00D72C4E /* start.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DD12314282D00D72C4E /* start.swift */; };
 		A2D77DD52314282D00D72C4E /* Keylogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DD22314282D00D72C4E /* Keylogger.swift */; };
 		A2D77DD62314282D00D72C4E /* CallBackFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DD32314282D00D72C4E /* CallBackFunctions.swift */; };
+		AA35F0CB2319391D0031EA2F /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35F0CA2319391D0031EA2F /* DisplayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		A2D77DD12314282D00D72C4E /* start.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = start.swift; sourceTree = "<group>"; };
 		A2D77DD22314282D00D72C4E /* Keylogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keylogger.swift; sourceTree = "<group>"; };
 		A2D77DD32314282D00D72C4E /* CallBackFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallBackFunctions.swift; sourceTree = "<group>"; };
+		AA35F0CA2319391D0031EA2F /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				A2D77DD02314280100D72C4E /* KeyLoger */,
 				A2D77DBE2312760400D72C4E /* AppDelegate.swift */,
 				A2D77DC02312760400D72C4E /* ViewController.swift */,
+				AA35F0CA2319391D0031EA2F /* DisplayView.swift */,
 				A2CD3EC82316C193000F7D10 /* MainMenu.xib */,
 				A2D77DC22312760500D72C4E /* Assets.xcassets */,
 				A2D77DC72312760500D72C4E /* Info.plist */,
@@ -158,6 +161,7 @@
 				A2D77DD62314282D00D72C4E /* CallBackFunctions.swift in Sources */,
 				A2D77DD52314282D00D72C4E /* Keylogger.swift in Sources */,
 				A2D77DC12312760400D72C4E /* ViewController.swift in Sources */,
+				AA35F0CB2319391D0031EA2F /* DisplayView.swift in Sources */,
 				A2D77DBF2312760400D72C4E /* AppDelegate.swift in Sources */,
 				A2D77DD42314282D00D72C4E /* start.swift in Sources */,
 			);
