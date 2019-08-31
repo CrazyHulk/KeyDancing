@@ -182,11 +182,11 @@ class Keylogger
         map[37] = ["8","*"]
         map[38] = ["9","("]
         map[39] = ["0",")"]
-        map[40] = ["\n","\n"]
-        map[41] = ["\\⎋","\\⎋"] // ESCAPE
-        map[42] = ["\\DELETE|BACKSPACE","\\DELETE|BACKSPACE"] //
-        map[43] = ["\\TAB","\\TAB"]
-        map[44] = [" "," "]
+        map[40] = ["↩","↩"] // \n
+        map[41] = ["⎋","⎋"] // ESCAPE
+        map[42] = ["⌫","⌫"] //\\DELETE|BACKSPACE
+        map[43] = ["⇥","⇥"] // tab
+        map[44] = ["␣","␣"] //  space " "
         map[45] = ["-","_"]
         map[46] = ["=","+"]
         map[47] = ["[","{"]
@@ -199,7 +199,7 @@ class Keylogger
         map[54] = [",","<"]
         map[55] = [".",">"]
         map[56] = ["/","?"]
-        map[57] = ["\\⇪","\\⇪f"] // CAPSLOCK
+        map[57] = ["\\⇪","\\⇪"] // CAPSLOCK
         map[58] = ["\\F1","\\F1"]
         map[59] = ["\\F2","\\F2"]
         map[60] = ["\\F3","\\F3"]
@@ -245,14 +245,14 @@ class Keylogger
         map[99] = [".","\\⌫"] // DELETE
         map[100] = ["",""] //
         /////
-        map[224] = ["\\L⌃","\\L⌃"] // left control
-        map[225] = ["\\L⇧","\\L⇧"] // left shift
-        map[226] = ["\\L⌥","\\L⌥"] // left alt
-        map[227] = ["\\L⌘","\\L⌘"] // left cmd
-        map[228] = ["\\R⌃","\\R⌃"] // right control
-        map[229] = ["\\R⇧","\\R⇧"] // right shift
-        map[230] = ["\\R⌥","\\R⌥"] // right alt
-        map[231] = ["\\R⌘","\\R⌘"] // right cmd
+        map[224] = ["L⌃","L⌃"] // left control
+        map[225] = ["L⇧","L⇧"] // left shift
+        map[226] = ["L⌥","L⌥"] // left alt
+        map[227] = ["L⌘","L⌘"] // left cmd
+        map[228] = ["R⌃","R⌃"] // right ntrol
+        map[229] = ["R⇧","R⇧"] // right shift
+        map[230] = ["R⌥","R⌥"] // right alt
+        map[231] = ["R⌘","R⌘"] // right cmd
         return map
     }
 

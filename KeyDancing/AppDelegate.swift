@@ -54,18 +54,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @IBAction func showInStatusBar(_ sender: Any) {
+        window.setIsVisible(false)
         CallBackFunctions.output = { chars in
-            if let title = self.statusBarItem.button?.title, title.count < 30 {
-                self.statusBarItem.button?.title = title + chars
-            } else {
-                self.statusBarItem.button?.title = chars
-            }
+            self.statusBarItem.button?.title = self.defaultStrategy(chars: chars)(self.statusBarItem.button?.title ?? "")
         }
     }
     
     @IBAction func showInWindow(_ sender: Any) {
         window.makeKey()
         window.setIsVisible(true)
+        statusBarItem.button?.title = "KeyDancing"
         if displayView == nil {
             displayView = DisplayView.init(frame: NSRect.init(
                 x: 0,
@@ -77,19 +75,32 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         CallBackFunctions.output = { chars in
-            
-            self.displayView?.setText(textOp: { (ori) -> String in
-                if ori.count < 30 {
-                    return ori + chars
-                } else {
-                    return chars
-                }
-            })
+            self.displayView?.setText(textOp: self.defaultStrategy(chars: chars))
         }
     }
     
     @IBAction func stopRegarding(_ sender: Any) {
          Keylogger.shared.stop()
+    }
+    
+    @IBAction func safeExit(_ sender: Any) {
+        Keylogger.shared.stop()
+        exit(0)
+    }
+    
+    func defaultStrategy(chars: String) -> (String) -> String {
+        let res: (String)-> String = { ori in
+            if ori.count < 15 {
+                return ori + chars
+            } else {
+                var index = ori.firstIndex(of: ")")
+                if index == nil || ori.hasPrefix(")") {
+                    index = ori.index(ori.startIndex, offsetBy: 3)
+                }
+                return ori[index!..<ori.endIndex] + chars
+            }
+        }
+        return res
     }
 }
 

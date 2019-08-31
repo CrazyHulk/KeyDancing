@@ -13,7 +13,7 @@ class DisplayView: NSView {
     lazy var textLabel:NSTextField = {
         let l = NSTextField()
         l.frame = self.frame
-        l.stringValue = "哈哈哈哈哈哈"
+        l.stringValue = ""
         l.font = NSFont.systemFont(ofSize: 35)
         l.backgroundColor = .clear
         l.textColor = .black

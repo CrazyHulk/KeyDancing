@@ -43,8 +43,14 @@
                         <action selector="stopRegarding:" target="sJ4-ZD-D9X" id="ENc-NG-aOM"/>
                     </connections>
                 </menuItem>
+                <menuItem title="exit" id="ExG-g8-ptr">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="safeExit:" target="sJ4-ZD-D9X" id="eMd-m5-qZX"/>
+                    </connections>
+                </menuItem>
             </items>
-            <point key="canvasLocation" x="142" y="132"/>
+            <point key="canvasLocation" x="142" y="156"/>
         </menu>
     </objects>
 </document>
